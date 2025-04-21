@@ -79,33 +79,6 @@ When you're done working, deactivate the environment:
 deactivate
 ```
 
-## Managing Dependencies
-
-### Viewing Installed Packages
-
-To see what packages are installed in your virtual environment:
-```
-pip list
-```
-
-### Creating a requirements.txt File
-
-If you need to create a requirements.txt file from your current environment:
-```
-pip freeze > requirements.txt
-```
-
-### Updating Packages
-
-To update a specific package:
-```
-pip install --upgrade package_name
-```
-
-## Troubleshooting
-
-### Command 'python' not found
-
 On some Linux/macOS systems, you might need to use `python3` instead of `python`:
 ```
 python3 -m venv venv
@@ -132,12 +105,6 @@ If pip is not found after activating the virtual environment:
 ```
 python -m pip install --upgrade pip
 ```
-
-## Additional Tips
-
-- Name your virtual environment something meaningful for your project instead of just "venv" if you're managing multiple projects
-- Add your virtual environment directory to your .gitignore file if using Git
-- Consider using `pipenv` or `poetry` for more advanced dependency management
 
 ## Example Workflow
 
